@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @Ziyan-Imran
+- 👋 Hi, I’m Ziyan
 - 👀 I’m interested in data science/data analytics with a focus on biostatistics
 - 🌱 I’m currently learning and improving my skills of Python/MySQL.
 - 💞️ I’m looking to collaborate on automation projects.
