@@ -121,5 +121,4 @@ set laststatus=2
     
 " Make search smart-case sensitive    
 set ignorecase    
-set smartcase    
-~
+set smartcase
