@@ -15,15 +15,15 @@ keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- incremen
 keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" }) -- decrement
 
 -- Keep Cursor at the same spot while page jumping up/down
-keymap.set("n", "<C-d>", "<C-d>zz")
-keymap.set("n", "<C-u>", "<C-u>zz")
+keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Page Jump Down with consistent cursor" })
+keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Page Jump Up with consistent cursor" })
 
 -- Keep search items in the middle
-keymap.set("n", "n", "nzzzv")
-keymap.set("n", "N", "nzzzv")
+keymap.set("n", "n", "nzzzv", { desc = "Goto next search item" })
+keymap.set("n", "N", "nzzzv", { desc = "Goto previous search item" })
 
 -- PasteOver remap
-keymap.set("x", "<leader>p", '"_dp')
+keymap.set("x", "<leader>p", '"_dp', { desc = "PasteOver remap" })
 
 -- window management
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" }) -- split window vertically
@@ -36,3 +36,5 @@ keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" 
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  go to next tab
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
+
+local wk = require("ziyan.plugins.which-key") -- variable to document which-key configs
